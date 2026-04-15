@@ -1,49 +1,35 @@
-📘 MCP-Based Personal Knowledge Assistant
-🚀 Overview
+MCP-Based Personal Knowledge Assistant
 
-The MCP-Based Personal Knowledge Assistant is an AI system that connects a Large Language Model with personal data sources like notes, documents, and databases using the Model Context Protocol (MCP).
+An AI-powered system that connects Large Language Models with personal data using Model Context Protocol (MCP). It enables intelligent interaction with notes, documents, and databases through natural language queries.
 
-It enhances responses by retrieving relevant information through semantic search (vector embeddings) and injecting it into the model’s context for accurate, context-aware answers.
+The system uses semantic search with vector embeddings to retrieve the most relevant information and inject it into the model’s context for accurate and meaningful responses.
 
-🧠 Key Idea
+It acts as a personal AI memory layer that understands user data and responds like a smart assistant.
 
-Instead of manually searching files, the system allows users to chat with their data. It works like a personal AI memory that understands, retrieves, and explains information intelligently.
+Users can query their files instead of manually searching them.
 
-⚙️ Features
-🔍 Semantic search over personal documents
-🧠 Context-aware AI responses
-🔗 MCP-based tool orchestration
-📂 Support for notes, PDFs, and text files
-⚡ Fast retrieval using vector embeddings
-🤖 Multi-step reasoning (retrieve → process → answer)
-🏗️ Architecture
+The MCP layer manages tool execution and data flow between the LLM and external sources.
 
-User Query → LLM → MCP Layer → Tools (Vector DB / Documents) → Context → Response
+It supports document retrieval, summarization, and multi-step reasoning.
 
-🛠️ Tech Stack
-Node.js
-JavaScript
-Vector Databases (FAISS / Pinecone / Weaviate)
-Embeddings API
-LLM APIs
-▶️ How It Works
-User asks a question
-LLM interprets intent
-MCP selects required tools
-Vector DB retrieves relevant context
-Context is injected into LLM
-Final response is generated
-📌 Example Queries
-“Summarize my OS notes”
-“Explain machine learning from my notes”
-“Find DBMS concepts in my documents”
-“Compare TCP and UDP using my data”
-🔐 Note
+Vector databases enable fast and context-aware information retrieval.
 
-Sensitive files like .env are excluded for security reasons.
+The system reduces hallucinations by grounding responses in real data.
 
-📈 Future Improvements
-Chat UI interface
-Voice-based interaction
-Cloud deployment
-Multi-user memory system
+It can process PDFs, notes, and structured text files.
+
+Each query follows a retrieve → process → generate pipeline.
+
+Designed for students, researchers, and knowledge-heavy workflows.
+
+Built using Node.js and modern AI APIs.
+
+Embeddings convert text into high-dimensional vectors for similarity search.
+
+The architecture is modular and easily extendable.
+
+Future upgrades include UI, voice input, and cloud deployment.
+
+This project demonstrates RAG + MCP integration in a real-world system.
+
+It improves productivity by turning personal data into an intelligent knowledge base.
